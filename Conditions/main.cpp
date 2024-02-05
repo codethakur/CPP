@@ -1,9 +1,15 @@
 #include<iostream>
-
+#include"Log.h"
 
 int main()
 {
-	char s = 'A';
-	std::cout << s << std::endl;
+	const char* ptr = nullptr;
+	if (ptr)
+		Log(ptr);
+	else if (ptr == "Namaste")
+		Log("Namaste");
+	else
+		Log("ptr is null");
+
 	std::cin.get();
 }
