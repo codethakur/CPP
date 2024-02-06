@@ -3,7 +3,7 @@
 
 class Entity {
 public:
-    std::string GetName() { return "Entity"; }
+    virtual std::string GetName() { return "Entity"; }
 };
 
 class Player : public Entity {
