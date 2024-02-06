@@ -3,7 +3,7 @@
 
 class Printing {
 public:
-    virtual std::string GetName() = 0;
+    virtual std::string GetName() = 0; // = 0 ->Pure Virtual Functions or called Interfaces in c# || abstract java
 };
 
 class Entity : public Printing {
