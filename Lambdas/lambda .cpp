@@ -3,7 +3,7 @@
 #include<algorithm>
 #include<functional>
 
-void ForEach(std::vector<int>& values, const std::function<void(int)>& func)
+void ForEach(std::vector<int>& values, const std::function<void(int)>& func) //auto& func
 {
     for (int value : values) {
         func(value);
