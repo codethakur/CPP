@@ -5,7 +5,8 @@
 class String
 {
 public:
-    String() = default;
+     // Default constructor
+    String() : m_data(nullptr), m_size(0) {}
     String(const char *string)
     {
         std::cout << "Created!\n";
